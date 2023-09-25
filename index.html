@@ -4,14 +4,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
   <title>Ethan's CV</title>
 </head>
 
 <body>
-
   <header>
+    <a class="logo" href="#about">
+      <span role="img">🎮</span>
+    </a>
     <nav>
-      <a href="#logo"><span role="img">🎮</span></a>
       <ul>
         <li>
           <a href="#skills">Skills</a>
@@ -24,35 +26,37 @@
   </header>
   <main>
     <section id="about">
-      <div id="about-container">
-        <div id="img-container">
-          <h3>Let me introduce myself!</h3>
+      <div class="about-container">
+        <div class="image-container">
           <img src="./assets/Ethan-photo.jpg" alt="Ethan picture">
-          <div id="text-container">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, deleniti architecto quos sit
-              exercitationem voluptas, doloribus doloremque ex officia amet autem veniam odio. Similique quia omnis
-              dignissimos labore ipsum vero.</p>
-            <ul>
-              <li>
-                <p>Ethan Carranza</p>
-              </li>
-              <li>
-                <p>FullStack Developer</p>
-              </li>
-              <li>
-                <a href="#">Empresas Ichiban</a>
-              </li>
-              <li><a href="mailto:ethan.carranza@outlook.es">Send me a <span role="img">📧</span></a></li>
-            </ul>
-          </div>
+          <h2>Let me introduce myself!</h2>
+        </div>
+        <div class="text-container">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, deleniti architecto quos sit
+            exercitationem voluptas, doloribus doloremque ex officia amet autem veniam odio. Similique quia omnis
+            dignissimos labore ipsum vero.</p>
+          <ul>
+            <li>
+              <p>Ethan Carranza</p>
+            </li>
+            <li>
+              <p>FullStack Developer</p>
+            </li>
+            <li>
+              <a href="#">Empresas Ichiban</a>
+            </li>
+            <li><a href="mailto:ethan.carranza@outlook.es">Send me a <span role="img">📧</span></a></li>
+          </ul>
         </div>
       </div>
     </section>
     <section id="skills">
       <h2>Skills</h2>
-      <label for="filter"><span role="img">🔎</span></label>
-      <input type="text" name="filter" id="filter">
-      <ul>
+      <form>
+        <label for="filter"><span role="img">🔎</span></label>
+        <input type="text" name="filter" id="filter">
+      </form>
+      <ul class="skill-list">
         <li>
           <p><strong>80%</strong> HTML5 <span role="img">📄</span></p>
         </li>
@@ -67,12 +71,14 @@
         </li>
       </ul>
     </section>
-    <section id="contact"></section>
-    <h2>Contact</h2>
-    <div>
-      <a class="cta" href="mailto:ethan.carranza@outlook.es">Hire me</a>
-      <a class="cta" href="./assets/CV(no definitivo).pdf" download="Ethan_CV">Download CV</a>
-    </div>
+    <section class="contact-container" id="contact">
+      <h2>Contact</h2>
+      <div>
+        <a class="cta" href="mailto:ethan.carranza@outlook.es">Hire me</a>
+        <a class="cta" href="./assets/CV(no definitivo).pdf" download="Ethan_CV">Download CV</a>
+      </div>
+    </section>
+
   </main>
   <footer>
     <p>Created by Ethan Carranza <span role="img">©</span>2023</p>
