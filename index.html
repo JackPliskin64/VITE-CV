@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <script src="./main.js" defer></script>
   <title>Ethan's CV</title>
 </head>
 
@@ -54,9 +55,9 @@
       <h2>Skills</h2>
       <form>
         <label for="filter"><span role="img">🔎</span></label>
-        <input type="text" name="filter" id="filter">
+        <input type="text" name="filter" id="filter" onkeyup="filterSkills()" placeholder="name/percentage">
       </form>
-      <ul class="skill-list">
+      <ul id="skill-elements" class="skill-list">
         <li>
           <p><strong>80%</strong> HTML5 <span role="img">📄</span></p>
         </li>
