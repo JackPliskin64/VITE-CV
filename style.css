@@ -102,6 +102,8 @@ section {
   opacity: 0;
   overflow: hidden;
   transition: opacity 1s ease;
+  animation: fade-in 1s ease;
+
 }
 
 section:not(.hidden) {
@@ -192,4 +194,13 @@ footer:not(.hidden) {
 
 .hidden {
   display: none;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
