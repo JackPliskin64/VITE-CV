@@ -99,6 +99,21 @@ section {
   flex-direction: column;
   align-items: center;
   padding: 2rem;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+section:not(.hidden) {
+  opacity: 1;
+}
+
+section > h2 {
+padding: 2rem;
+}
+
+section > div > a:hover {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 .about-container {
@@ -149,7 +164,7 @@ section {
   justify-content: center;
 }
 
-.contact-container > div {
+.hidden > div {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
@@ -165,4 +180,8 @@ footer {
   display: flex;
   justify-content: center;
   padding: 2rem;
+}
+
+.hidden {
+  display: none;
 }
