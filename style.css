@@ -7,7 +7,7 @@
   --secondary-font: 'Courier New', Courier, monospace;
 
   --primary-font-size: 1rem;
-  --secondary-font-size: 1.5rem;
+  --secondary-font-size: 1.25rem;
   --tertiary-font-size: 2rem;
   --quaternary-font-size: 2.5rem;
   --quinary-font-size: 3rem;
@@ -64,18 +64,24 @@ input {
 header {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   padding: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  gap: 1rem;
 }
 
 header > .logo {
-  font-size: 30px;
+  font-size: 35px;
   transform: 0.2 ease;
+  max-height: 50px;
+  margin-left: 3rem;
 } 
 
 header > .logo:hover {
 transform: scale(1.1);
 background-color: var(--tertiary-color);
-border-radius: 20px;
+border-radius: 3rem;
 border-color: var(--primary-color);
 }
 
@@ -86,12 +92,14 @@ header > nav {
 header > nav > ul {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
 header > nav > ul > li {
   border: 1px solid var(--primary-color);
   border-radius: 30px;
-  padding: 0.5rem;
+  padding: 0.7rem;
 }
 
 header > nav > ul > li:hover {
@@ -206,6 +214,10 @@ footer:not(.hidden) {
 
 .hidden {
   display: none;
+}
+
+.name-li, .career-li, .school-li, .availability-li{
+  list-style:square;
 }
 
 @keyframes fade-in {
