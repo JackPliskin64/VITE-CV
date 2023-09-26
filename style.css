@@ -99,12 +99,6 @@ section {
   flex-direction: column;
   align-items: center;
   padding: 2rem;
-  opacity: 0;
-  transition: opacity 0.5s ease;
-}
-
-section:not(.hidden) {
-  opacity: 1;
 }
 
 section > h2 {
