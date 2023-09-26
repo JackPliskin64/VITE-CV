@@ -99,6 +99,14 @@ section {
   flex-direction: column;
   align-items: center;
   padding: 2rem;
+  opacity: 0;
+  overflow: hidden;
+  transition: opacity 1s ease;
+}
+
+section:not(.hidden) {
+  opacity: 1;
+  max-height: 1000px; /* Ajusta el valor según sea necesario */
 }
 
 section > h2 {
@@ -174,6 +182,12 @@ footer {
   display: flex;
   justify-content: center;
   padding: 2rem;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+footer:not(.hidden) {
+  opacity: 1;
 }
 
 .hidden {
