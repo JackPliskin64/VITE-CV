@@ -1,100 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Ethan Carranza" />
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="./main.js" defer></script>
+    <title>Ethan's CV</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <script type="module" src="./main.js" defer></script>
-  <title>Ethan's CV</title>
-</head>
-
-<body>
-  <header>
-    <a class="logo" href="#game">
-      <span role="img">🎮</span>
-    </a>
-    <nav>
-      <ul>
-        <li>
-          <a href="#introduction">Introduction</a>
-        </li>
-        <li>
-          <a href="#skills">Skills</a>
-        </li>
-        <li>
-          <a href="#projects">Projects</a>
-        </li>
-        <li>
-          <a href="#experience">Experience</a>
-        </li>
-        <li>
-          <a href="#contact">Contact</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <section id="introduction-content">
-      <div class="about-container">
-        <div class="image-container">
-          <img src="./assets/photo.webp" alt="Ethan picture">
-          <h2>Let me introduce myself!</h2>
+  <body>
+    <header>
+      <a class="logo" href="#game">
+        <span role="img">🎮</span>
+      </a>
+      <nav>
+        <ul>
+          <li>
+            <a href="#introduction">Introduction</a>
+          </li>
+          <li>
+            <a href="#skills">Skills</a>
+          </li>
+          <li>
+            <a href="#projects">Projects</a>
+          </li>
+          <li>
+            <a href="#experience">Experience</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="introduction-content">
+        <div class="about-container">
+          <div class="image-container">
+            <img src="./assets/photo.webp" alt="Ethan picture" />
+            <h2>Let me introduce myself!</h2>
+          </div>
+          <div class="text-container">
+            <p>
+              Hello there! My name is <strong>Ethan Carranza</strong> and I'm a
+              spanish junior fullstack developer constantly learning. I do
+              various types of web projects and some things in Unity. Nice to
+              meet you!
+            </p>
+            <ul>
+              <li class="name-li">
+                <p>Ethan Carranza Serrano</p>
+              </li>
+              <li class="career-li">
+                <p>FullStack Developer</p>
+              </li>
+              <li class="school-li">
+                <a href="#">Learning at <strong>ThePowerMBA</strong></a>
+              </li>
+              <li class="availability-li">Open for work!</li>
+            </ul>
+          </div>
         </div>
-        <div class="text-container">
-          <p>Hello there! My name is <strong>Ethan Carranza</strong> and I'm a spanish junior fullstack developer
-            constantly learning. I do various types of web
-            projects and
-            some things in Unity. Nice to meet you!</p>
-          <ul>
-            <li class="name-li">
-              <p>Ethan Carranza Serrano</p>
-            </li>
-            <li class="career-li">
-              <p>FullStack Developer</p>
-            </li>
-            <li class="school-li">
-              <a href="#">Learning at <strong>ThePowerMBA</strong></a>
-            </li>
-            <li class="availability-li">Open for work!</li>
-          </ul>
+      </section>
+      <section id="skills-content" class="hidden">
+        <h2>Skills</h2>
+        <form>
+          <label for="filter"><span role="img">🔎</span></label>
+          <input
+            type="text"
+            name="filter"
+            id="filter"
+            onkeyup="filterSkills()"
+            placeholder="name/percentage"
+          />
+        </form>
+        <ul id="skill-elements" class="skill-list">
+          <li>
+            <p><strong>80%</strong> HTML5 <span role="img">📄</span></p>
+          </li>
+          <li>
+            <p><strong>70%</strong> CSS3 <span role="img">🎨</span></p>
+          </li>
+          <li>
+            <p><strong>50%</strong> JS <span role="img">💻</span></p>
+          </li>
+          <li>
+            <p><strong>60%</strong> C# <span role="img">📌</span></p>
+          </li>
+        </ul>
+      </section>
+      <section id="contact-content" class="hidden">
+        <h2>Contact</h2>
+        <div>
+          <a class="cta" href="mailto:ethan.carranza@outlook.es">Hire me</a>
+          <a class="cta" href="./assets/cv.jpg" download="cv.jpg"
+            >Download CV</a
+          >
         </div>
-      </div>
-    </section>
-    <section id="skills-content" class="hidden">
-      <h2>Skills</h2>
-      <form>
-        <label for="filter"><span role="img">🔎</span></label>
-        <input type="text" name="filter" id="filter" onkeyup="filterSkills()" placeholder="name/percentage">
-      </form>
-      <ul id="skill-elements" class="skill-list">
-        <li>
-          <p><strong>80%</strong> HTML5 <span role="img">📄</span></p>
-        </li>
-        <li>
-          <p><strong>70%</strong> CSS3 <span role="img">🎨</span></p>
-        </li>
-        <li>
-          <p><strong>50%</strong> JS <span role="img">💻</span></p>
-        </li>
-        <li>
-          <p><strong>60%</strong> C# <span role="img">📌</span></p>
-        </li>
-      </ul>
-    </section>
-    <section id="contact-content" class="hidden">
-      <h2>Contact</h2>
-      <div>
-        <a class="cta" href="mailto:ethan.carranza@outlook.es">Hire me</a>
-        <a class="cta" href="./assets/cv.jpg" download="cv.jpg">Download CV</a>
-      </div>
-    </section>
-
-  </main>
-  <footer>
-    <p>Created by Ethan Carranza <span role="img">©</span>2023</p>
-  </footer>
-
-</body>
-
+      </section>
+    </main>
+    <footer>
+      <p>Created by Ethan Carranza <span role="img">©</span>2023</p>
+    </footer>
+  </body>
 </html>

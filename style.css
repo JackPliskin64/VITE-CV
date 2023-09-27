@@ -31,7 +31,9 @@ h2 {
   font-size: var(--secondary-font-size);
 }
 
-a, p, li {
+a,
+p,
+li {
   font-size: var(--primary-font-size);
 }
 
@@ -78,13 +80,13 @@ header > .logo {
   transform: 0.2 ease;
   max-height: 50px;
   margin-left: 3rem;
-} 
+}
 
 header > .logo:hover {
-transform: scale(1.1);
-background-color: var(--tertiary-color);
-border-radius: 3rem;
-border-color: var(--primary-color);
+  transform: scale(1.1);
+  background-color: var(--tertiary-color);
+  border-radius: 3rem;
+  border-color: var(--primary-color);
 }
 
 header > nav {
@@ -121,7 +123,6 @@ section {
   overflow: hidden;
   transition: opacity 1s ease;
   animation: fade-in 1s ease;
-
 }
 
 section:not(.hidden) {
@@ -130,7 +131,7 @@ section:not(.hidden) {
 }
 
 section > h2 {
-padding: 2rem;
+  padding: 2rem;
 }
 
 section > div > a:hover {
@@ -219,8 +220,11 @@ footer:not(.hidden) {
   display: none;
 }
 
-.name-li, .career-li, .school-li, .availability-li{
-  list-style:square;
+.name-li,
+.career-li,
+.school-li,
+.availability-li {
+  list-style: square;
 }
 
 @keyframes fade-in {
