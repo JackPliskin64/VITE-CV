@@ -261,7 +261,8 @@ figcaption {
   padding-top: 3rem;
 }
 
-#unity-title {
+#unity-title,
+#web_design-title {
   font-size: var(--secondary-font-size);
   text-align: center;
   padding-top: 2rem;
