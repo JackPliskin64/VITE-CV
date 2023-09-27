@@ -2,6 +2,7 @@
   --primary-color: #ffffff;
   --secondary-color: #1e1e1e;
   --tertiary-color: #4b4a4b;
+  --quaternary-color: rgb(109, 109, 214);
 
   --primary-font: 'Courier New', Courier, monospace;
   --secondary-font: 'Courier New', Courier, monospace;
@@ -125,7 +126,6 @@ section {
 
 section:not(.hidden) {
   opacity: 1;
-  max-height: 1000px; /* Ajusta el valor según sea necesario */
 }
 
 section > h2 {
@@ -137,11 +137,18 @@ section > div > a:hover {
   color: var(--secondary-color);
 }
 
+.school-link:hover {
+  color: var(--quaternary-color);
+}
+
 .introduction-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   gap: 3rem;
+  padding: 1rem;
+  background-color: var(--tertiary-color);
+  border-radius: 10px;
 }
 
 .image-container {
@@ -189,6 +196,10 @@ section > div > a:hover {
   justify-content: center;
 }
 
+.skill-list > li:hover {
+  scale: 1.1;
+}
+
 .hidden > div {
   width: 100%;
   display: flex;
@@ -214,6 +225,9 @@ section > div > a:hover {
   align-items: center;
   width: 200px;
   gap: 1rem;
+  background-color: var(--tertiary-color, 0.5);
+  border-radius: 10px;
+  min-height: 350px;
 }
 
 .project-img {
@@ -221,9 +235,8 @@ section > div > a:hover {
   border-radius: 10px;
 }
 
-.project-img:hover {
+.project:hover {
   scale: 1.1;
-  margin-bottom: 10px;
 }
 
 .project-description {
@@ -232,7 +245,7 @@ section > div > a:hover {
 }
 
 figure > a {
-  color: rgb(109, 109, 214);
+  color: var(--quaternary-color);
 }
 
 figcaption {
