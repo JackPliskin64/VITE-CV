@@ -7,8 +7,8 @@
   --secondary-font: 'Courier New', Courier, monospace;
 
   --primary-font-size: 1rem;
-  --secondary-font-size: 1.25rem;
-  --tertiary-font-size: 2rem;
+  --secondary-font-size: 1.2rem;
+  --tertiary-font-size: 1.5rem;
   --quaternary-font-size: 2.5rem;
   --quinary-font-size: 3rem;
 }
@@ -28,7 +28,7 @@ body {
 }
 
 h2 {
-  font-size: var(--secondary-font-size);
+  font-size: var(--tertiary-font-size);
 }
 
 a,
@@ -70,9 +70,7 @@ header {
   flex-wrap: wrap;
   padding: 2rem;
   margin-top: 1rem;
-  margin-bottom: 3rem;
   gap: 1rem;
-  height: 10vh;
 }
 
 header > .logo {
@@ -131,7 +129,7 @@ section:not(.hidden) {
 }
 
 section > h2 {
-  padding: 2rem;
+  padding: 1rem;
 }
 
 section > div > a:hover {
@@ -139,7 +137,7 @@ section > div > a:hover {
   color: var(--secondary-color);
 }
 
-.about-container {
+.introduction-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -197,10 +195,77 @@ section > div > a:hover {
   justify-content: space-evenly;
 }
 
+#projects-title {
+  text-align: center;
+  padding: 1rem;
+}
+
+.projects-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 3rem;
+  padding: 1rem;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  gap: 1rem;
+}
+
+.project-img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.project-img:hover {
+  scale: 1.1;
+  margin-bottom: 10px;
+}
+
+.project-description {
+  text-align: center;
+  scale: 0.9;
+}
+
+figure > a {
+  color: rgb(109, 109, 214);
+}
+
+figcaption {
+  text-align: center;
+  font-size: var(--secondary-font-size);
+}
+
 .cta {
   padding: 15px;
   border: 2px solid var(--primary-color);
   border-radius: 10px;
+}
+
+#contact-content {
+  gap: 2rem;
+}
+
+#contact-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-evenly;
+}
+
+#introduction-content {
+  padding-top: 3rem;
+}
+
+#unity-title {
+  font-size: var(--secondary-font-size);
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 0.5rem;
 }
 
 footer {
