@@ -52,6 +52,11 @@ img {
   width: 100%;
 }
 
+.language-img {
+  width: 50px;
+  border-radius: 5px;
+}
+
 form {
   margin: 2rem;
 }
@@ -83,8 +88,6 @@ header > .logo {
 
 header > .logo:hover {
   transform: scale(1.1);
-  background-color: var(--tertiary-color);
-  border-radius: 3rem;
   border-color: var(--primary-color);
 }
 
