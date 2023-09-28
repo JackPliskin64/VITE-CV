@@ -88,9 +88,6 @@ header > .logo {
 
 header > .logo:hover {
   transform: scale(1.1);
-  background-color: var(--tertiary-color);
-  border-radius: 3rem;
-  border-color: var(--primary-color);
 }
 
 header > nav {
