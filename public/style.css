@@ -52,6 +52,11 @@ img {
   width: 100%;
 }
 
+.language-img {
+  width: 50px;
+  border-radius: 10px;
+}
+
 form {
   margin: 2rem;
 }
