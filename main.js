@@ -20,10 +20,12 @@ document.addEventListener('DOMContentLoaded', function () {
   var contactLink = document.querySelector('a[href="#contact"]')
   var introductionLink = document.querySelector('a[href="#introduction"]')
   var projectsLink = document.querySelector('a[href="#projects"]')
+  var experienceLink = document.querySelector('a[href="#experience"]')
   var skillsContent = document.getElementById('skills-content')
   var contactContent = document.getElementById('contact-content')
   var introductionContent = document.getElementById('introduction-content')
   var projectsContent = document.getElementById('projects-content')
+  var experienceContent = document.getElementById('experience-content')
   var footer = document.querySelector('footer')
 
   skillsLink.addEventListener('click', function (e) {
@@ -66,11 +68,22 @@ document.addEventListener('DOMContentLoaded', function () {
     }, 100)
   })
 
+  experienceLink.addEventListener('click', function (e) {
+    e.preventDefault()
+    hideAllContent()
+    experienceContent.classList.remove('hidden')
+    setTimeout(function () {
+      experienceContent.style.opacity = 1
+      footer.style.opacity = 1 // Mostrar el footer
+    }, 100)
+  })
+
   function hideAllContent() {
     skillsContent.classList.add('hidden')
     contactContent.classList.add('hidden')
     introductionContent.classList.add('hidden')
     projectsContent.classList.add('hidden')
+    experienceContent.classList.add('hidden')
     skillsContent.style.opacity = 0
     contactContent.style.opacity = 0
     introductionContent.style.opacity = 0

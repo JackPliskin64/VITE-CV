@@ -52,9 +52,24 @@ img {
   width: 100%;
 }
 
-.language-img {
-  width: 50px;
-  border-radius: 10px;
+.experience-img-container {
+  max-width: 400px;
+  align-self: center;
+  padding: 2rem;
+  max-height: 200px;
+}
+
+.experience-img {
+  max-width: 100%;
+  border-radius: 20px;
+}
+
+.experience-img:hover {
+  scale: 1.05;
+}
+
+#cex-img {
+  max-height: 175px;
 }
 
 form {
@@ -134,7 +149,7 @@ section > h2 {
   padding: 1rem;
 }
 
-section > div > a:hover {
+.cta:hover {
   background-color: var(--primary-color);
   color: var(--secondary-color);
 }
@@ -255,6 +270,30 @@ figcaption {
   font-size: var(--secondary-font-size);
 }
 
+#experience-content {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.experience-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  max-width: 60%;
+}
+
+.experience-item {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+#download-button {
+  margin-top: 3rem;
+}
+
 .cta {
   padding: 15px;
   border: 2px solid var(--primary-color);
@@ -298,7 +337,10 @@ footer:not(.hidden) {
 }
 
 .hidden {
-  display: none;
+  display: none !important; /* Agrega !important para asegurarte de que prevalezca */
+  opacity: 0;
+  visibility: hidden; /* Añade visibility: hidden; */
+  transition: opacity 1s ease, visibility 0s 1s; /* Añade una transición para ocultar la sección */
 }
 
 .name-li,
