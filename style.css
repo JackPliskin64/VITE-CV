@@ -48,8 +48,19 @@ a {
   text-decoration: none;
 }
 
+#github-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
 img {
   width: 100%;
+}
+
+#github-img {
+  height: 20px;
+  width: 20px;
 }
 
 .experience-img-container {
