@@ -96,11 +96,12 @@ input {
 
 header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
   padding: 2rem;
   margin-top: 1rem;
   gap: 1rem;
+  min-height: 10vh;
 }
 
 header > .logo {
@@ -204,6 +205,10 @@ section > h2 {
 
 .text-container > ul > li {
   margin: 1rem;
+}
+
+#skills-content {
+  gap: 2rem;
 }
 
 .skill-list {
@@ -368,4 +373,8 @@ footer:not(.hidden) {
   to {
     opacity: 1;
   }
+}
+
+main {
+  min-height: 80vh;
 }
