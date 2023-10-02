@@ -184,11 +184,13 @@ section > h2 {
   width: 300px;
 }
 
-.image-container > img {
+.image-container > img,
+#certificate {
   border-radius: 10%;
 }
 
-.image-container > img:hover {
+.image-container > img:hover,
+#certificate:hover {
   scale: 1.01;
 }
 
