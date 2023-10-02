@@ -149,6 +149,7 @@ section {
   overflow: hidden;
   transition: opacity 1s ease;
   animation: fade-in 1s ease;
+  gap: 2rem;
 }
 
 section:not(.hidden) {
