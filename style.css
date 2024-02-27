@@ -282,6 +282,7 @@ section > h2 {
 
 figure > a {
   color: var(--quaternary-color);
+  padding: 1rem;
 }
 
 figcaption {
