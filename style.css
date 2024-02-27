@@ -267,8 +267,8 @@ section > h2 {
 .project-img {
   width: 100%;
   border-radius: 10px;
-  max-width: 200px;
-  max-height: 90px;
+  width: 200px;
+  height: 135px;
 }
 
 .project:hover {
